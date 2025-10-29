@@ -11,7 +11,7 @@ public class DanceRoutine {
     public DanceRoutine(Boohbah[] boohbahs){
         this.boohbahs = boohbahs;
     }
-    public String BuildRoutine(){
+    public String buildRoutine(){
         StringBuilder routine = new StringBuilder();
         for(Boohbah b: boohbahs){
             routine.append(b.performsRoutine()).append("\n"); // displays the routines of the boohbahs from preformRoutine
@@ -19,7 +19,7 @@ public class DanceRoutine {
         // returns the original routine of the boohbahs
         return routine.toString();
     }
-    public String ModifyRoutine(){
+    public String modifyRoutine(){
         StringBuilder moded = new StringBuilder();
         for(Boohbah b: boohbahs){ // iterates through each boohbah in the array
             String line = b.performsRoutine().replace("performs", "dances to"); // replaces performs to dances to in each routine

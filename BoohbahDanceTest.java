@@ -17,9 +17,9 @@ public class BoohbahDanceTest {
         DanceRoutine routine = new DanceRoutine(team); // creates a new instance of their dance routine
 
         System.out.println("Original Routine");
-        System.out.println(routine.BuildRoutine());
+        System.out.println(routine.buildRoutine());
         System.out.println("Modified Routine");
-        System.out.println(routine.ModifyRoutine());
+        System.out.println(routine.modifyRoutine());
 
     }
 }
