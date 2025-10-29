@@ -1,8 +1,32 @@
+/**
+ * Ayah Abdalla
+ * Java I
+ * 10/29/2025
+ *
+ * Constructor class that builds the dances of each boohbah
+ */
 public class DanceRoutine {
-    private String[] boohbahs;
+    private Boohbah[] boohbahs; // creates an array of the boohbahs
 
-    DanceRoutine(String[] boohbahs){
+    public DanceRoutine(Boohbah[] boohbahs){
         this.boohbahs = boohbahs;
+    }
+    public String BuildRoutine(){
+        StringBuilder routine = new StringBuilder();
+        for(Boohbah b: boohbahs){
+            routine.append(b.performsRoutine()).append("\n"); // displays the routines of the boohbahs from preformRoutine
+        }
+        // returns the original routine of the boohbahs
+        return routine.toString();
+    }
+    public String ModifyRoutine(){
+        StringBuilder moded = new StringBuilder();
+        for(Boohbah b: boohbahs){ // iterates through each boohbah in the array
+            String line = b.performsRoutine().replace("performs", "dances to"); // replaces performs to dances to in each routine
+            moded.append(line).append("\n");
+        }
+        // returns the modified string of the boohbahs
+        return moded.toString();
     }
 
 }

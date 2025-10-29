@@ -1,26 +1,27 @@
+/**
+ * Ayah Abdalla
+ * Java I
+ * 10/29/2025
+ *
+ * Constructor class that builds the boohbahs
+ */
 public class Boohbah {
     private String name;
     private String danceMove;
 
+    // main constructor for the boohbahs to define name and dance move
     Boohbah(String name, String danceMove){
         this.name = name;
         this.danceMove = danceMove;
     }
-
+    // getter for dance moves
     public String getDanceMove() {
         return danceMove;
     }
-
-    public void setDanceMove(String danceMove) {
-        this.danceMove = danceMove;
-    }
-
+    // getter for name
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void preformMove(){System.out.println(this.name + " performs " + this.danceMove);}
+    // PreformRoutine preforms the routines of the boobahs based on the actual name
+    public String performsRoutine(){return (this.name + " performs " + this.danceMove);}
 }
