@@ -20,7 +20,7 @@ public class BoohbahDanceTest {
         System.out.println(routine.buildRoutine());
         System.out.println("Modified Routine");
         System.out.println(routine.modifyRoutine());
-        System.out.println("Remixed Routine:");
+        System.out.println("Remixed Routine");
         System.out.print(routine.remixRoutine());
 
     }

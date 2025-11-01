@@ -29,16 +29,16 @@ public class DanceRoutine {
         return moded.toString();
     }
     public String remixRoutine(){
-        Stringbuilder og = new StringBuilder();
-        Stringbuilder remixVersion = new StringBuilder(og);
+        StringBuilder og = new StringBuilder();
+        StringBuilder remixVersion = new StringBuilder(og);
         if (remixVersion.charAt(remixVersion.length() - 1) == '\n') {
             remixVersion.delete(remixVersion.length() - 1, remixVersion.length());
         }
-        remixVersion.reversed();
+        remixVersion.reverse();
         remixVersion.insert(0, "--- REMIX ---\n");
         remixVersion.append("\n(Backwards Boohbah Shuffle!)");
         
-        return remixed.toString();
+        return remixVersion.toString();
     }
 
 }
